@@ -13,6 +13,9 @@
 		BA1F323A200073DC0042F008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1F3239200073DC0042F008 /* Assets.xcassets */; };
 		BA1F323D200073DC0042F008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1F323B200073DC0042F008 /* LaunchScreen.storyboard */; };
 		BA1F3248200074360042F008 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3247200074360042F008 /* Artist.swift */; };
+		BA1F324A200075310042F008 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3249200075310042F008 /* Genre.swift */; };
+		BA1F324C200075B80042F008 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324B200075B80042F008 /* Album.swift */; };
+		BA1F324E200078500042F008 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324D200078500042F008 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BA1F323C200073DC0042F008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1F323E200073DC0042F008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1F3247200074360042F008 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		BA1F3249200075310042F008 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		BA1F324B200075B80042F008 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BA1F324D200078500042F008 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				BA1F3247200074360042F008 /* Artist.swift */,
+				BA1F3249200075310042F008 /* Genre.swift */,
+				BA1F324B200075B80042F008 /* Album.swift */,
+				BA1F324D200078500042F008 /* Song.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -163,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1F324E200078500042F008 /* Song.swift in Sources */,
 				BA1F3248200074360042F008 /* Artist.swift in Sources */,
 				BA1F3235200073DC0042F008 /* ViewController.swift in Sources */,
 				BA1F3233200073DC0042F008 /* AppDelegate.swift in Sources */,
+				BA1F324A200075310042F008 /* Genre.swift in Sources */,
+				BA1F324C200075B80042F008 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
