@@ -20,9 +20,10 @@ class Album {
     let primaryGenre: Genre
     var songs = [Song]()
     
-    init(id: Int, artistName: String, censorName: String, artworkURL: String, isExplicit: Bool, numberOfTracks: Int, releaseDate: Date, primaryGenre: Genre) {
+    init(id: Int, artistName: String, name: String,censorName: String, artworkURL: String, isExplicit: Bool, numberOfTracks: Int, releaseDate: Date, primaryGenre: Genre) {
         self.id = id
         self.artistName = artistName
+        self.name = name
         self.censorName = censorName
         self.artworkURL = artworkURL
         self.isExplicit = isExplicit
