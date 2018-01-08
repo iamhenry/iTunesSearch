@@ -16,6 +16,7 @@
 		BA1F324A200075310042F008 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3249200075310042F008 /* Genre.swift */; };
 		BA1F324C200075B80042F008 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324B200075B80042F008 /* Album.swift */; };
 		BA1F324E200078500042F008 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324D200078500042F008 /* Song.swift */; };
+		BAF275E22003E2CA00E97862 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF275E12003E2CA00E97862 /* Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BA1F3249200075310042F008 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		BA1F324B200075B80042F008 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		BA1F324D200078500042F008 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BAF275E12003E2CA00E97862 /* Stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				BA1F3249200075310042F008 /* Genre.swift */,
 				BA1F324B200075B80042F008 /* Album.swift */,
 				BA1F324D200078500042F008 /* Song.swift */,
+				BAF275E12003E2CA00E97862 /* Stub.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				BA1F324E200078500042F008 /* Song.swift in Sources */,
 				BA1F3248200074360042F008 /* Artist.swift in Sources */,
+				BAF275E22003E2CA00E97862 /* Stub.swift in Sources */,
 				BA1F3235200073DC0042F008 /* ViewController.swift in Sources */,
 				BA1F3233200073DC0042F008 /* AppDelegate.swift in Sources */,
 				BA1F324A200075310042F008 /* Genre.swift in Sources */,
@@ -337,6 +341,7 @@
 				BA1F3243200073DC0042F008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
