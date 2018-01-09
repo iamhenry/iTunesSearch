@@ -27,6 +27,8 @@ class SearchResultsController: UITableViewController {
         searchController.searchResultsUpdater = self
         
         tableView.dataSource = dataSource
+        
+        definesPresentationContext = true
     }
     
     func dismissSearchResultsController() {

@@ -56,6 +56,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yLl-F8-QCG" kind="show" id="ge0-yr-AHK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -67,6 +70,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0d-MB-Mhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1356" y="134"/>
+        </scene>
+        <!--Album List Controller-->
+        <scene sceneID="Kzc-XO-eIw">
+            <objects>
+                <tableViewController id="yLl-F8-QCG" customClass="AlbumListController" customModule="itunesSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qEG-PZ-dpq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="80" id="8CT-lA-fqy" userLabel="AlbumCell" customClass="AlbumCell" customModule="itunesSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CT-lA-fqy" id="MoX-Qu-Fkh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="yiY-h5-6AQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="3c2-fU-TSP"/>
+                                                <constraint firstAttribute="height" constant="80" id="3tt-wW-xSb"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="733-yf-NEg">
+                                            <rect key="frame" x="88" y="5" width="96.5" height="69.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5A-pe-OX8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOM-CN-X3X">
+                                                    <rect key="frame" x="0.0" y="24.5" width="46.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 01, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cG-TB-nji">
+                                                    <rect key="frame" x="0.0" y="49" width="96.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="733-yf-NEg" firstAttribute="centerY" secondItem="MoX-Qu-Fkh" secondAttribute="centerY" id="0UQ-tT-6tG"/>
+                                        <constraint firstItem="733-yf-NEg" firstAttribute="leading" secondItem="yiY-h5-6AQ" secondAttribute="trailing" constant="8" id="C76-Bv-VxP"/>
+                                        <constraint firstItem="yiY-h5-6AQ" firstAttribute="top" secondItem="MoX-Qu-Fkh" secondAttribute="top" id="Mwm-5r-yxE"/>
+                                        <constraint firstItem="yiY-h5-6AQ" firstAttribute="leading" secondItem="MoX-Qu-Fkh" secondAttribute="leading" id="Tjn-Sa-dbj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumTitleLabel" destination="733-yf-NEg" id="kFp-CA-Iwz"/>
+                                    <outlet property="artworkView" destination="MoX-Qu-Fkh" id="rIY-pg-2B8"/>
+                                    <outlet property="genreLabel" destination="VOM-CN-X3X" id="Gtw-7a-03I"/>
+                                    <outlet property="releaseDateLabel" destination="1cG-TB-nji" id="1A6-9X-RhZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yLl-F8-QCG" id="1qL-Ik-SQ6"/>
+                            <outlet property="delegate" destination="yLl-F8-QCG" id="oup-nI-Ycq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCl-D2-bR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="935"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kr8-Ia-46o">
@@ -87,4 +162,7 @@
             <point key="canvasLocation" x="568" y="134.93253373313345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AlbumPlaceholder" width="100" height="100"/>
+    </resources>
 </document>
