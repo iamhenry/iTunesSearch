@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C739000200448BC00843C37 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C738FFF200448BC00843C37 /* SearchResultsController.swift */; };
 		BA1F3233200073DC0042F008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3232200073DC0042F008 /* AppDelegate.swift */; };
 		BA1F3235200073DC0042F008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3234200073DC0042F008 /* ViewController.swift */; };
 		BA1F3238200073DC0042F008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1F3236200073DC0042F008 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C738FFF200448BC00843C37 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		BA1F322F200073DC0042F008 /* itunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1F3232200073DC0042F008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1F3234200073DC0042F008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				BA1F3245200074190042F008 /* Controllers */,
 				BA1F32442000740B0042F008 /* Models */,
 				BA1F3232200073DC0042F008 /* AppDelegate.swift */,
-				BA1F3234200073DC0042F008 /* ViewController.swift */,
 				BA1F3236200073DC0042F008 /* Main.storyboard */,
 				BA1F3239200073DC0042F008 /* Assets.xcassets */,
 				BA1F323B200073DC0042F008 /* LaunchScreen.storyboard */,
@@ -92,6 +93,8 @@
 		BA1F3245200074190042F008 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BA1F3234200073DC0042F008 /* ViewController.swift */,
+				2C738FFF200448BC00843C37 /* SearchResultsController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				BA1F3248200074360042F008 /* Artist.swift in Sources */,
 				BAF275E22003E2CA00E97862 /* Stub.swift in Sources */,
 				BA1F3235200073DC0042F008 /* ViewController.swift in Sources */,
+				2C739000200448BC00843C37 /* SearchResultsController.swift in Sources */,
 				BA1F3233200073DC0042F008 /* AppDelegate.swift in Sources */,
 				BA1F324A200075310042F008 /* Genre.swift in Sources */,
 				BA1F324C200075B80042F008 /* Album.swift in Sources */,
