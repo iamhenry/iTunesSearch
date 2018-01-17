@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1356" y="935"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Album Detail Controller-->
         <scene sceneID="bMk-jS-RQD">
             <objects>
-                <tableViewController id="3e0-Io-Jhz" sceneMemberID="viewController">
+                <tableViewController id="3e0-Io-Jhz" customClass="AlbumDetailController" customModule="itunesSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pKP-dI-jKb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="6fY-L9-Fpy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="6fY-L9-Fpy" customClass="SongCell" customModule="itunesSearch" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6fY-L9-Fpy" id="Zri-6B-aHi">
@@ -224,6 +224,10 @@
                                         <constraint firstItem="zuR-8h-j2K" firstAttribute="centerY" secondItem="Zri-6B-aHi" secondAttribute="centerY" id="WFC-nj-epi"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songRuntimeLabel" destination="zuR-8h-j2K" id="XGU-Hq-wEK"/>
+                                    <outlet property="songTitleLabel" destination="RWa-l7-5dd" id="t0C-oR-dAV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -231,6 +235,12 @@
                             <outlet property="delegate" destination="3e0-Io-Jhz" id="iJc-Gu-7g5"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="albumGenreLabel" destination="M5P-EP-OwH" id="jGO-s9-5PF"/>
+                        <outlet property="albumReleaseDateLabel" destination="k8X-gP-cJy" id="Vpn-Pf-Cj0"/>
+                        <outlet property="albumTitleLabel" destination="45J-j3-8Jd" id="KKm-Bc-IBu"/>
+                        <outlet property="artworkView" destination="NGc-6W-m3k" id="OFj-aE-S2z"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2B-wx-KjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
