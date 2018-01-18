@@ -24,6 +24,8 @@
 		BA1F324A200075310042F008 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F3249200075310042F008 /* Genre.swift */; };
 		BA1F324C200075B80042F008 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324B200075B80042F008 /* Album.swift */; };
 		BA1F324E200078500042F008 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F324D200078500042F008 /* Song.swift */; };
+		BA2EF16C20110EF600610AB5 /* iTunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EF16B20110EF600610AB5 /* iTunesMedia.swift */; };
+		BA2EF16E20110F3E00610AB5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EF16D20110F3E00610AB5 /* Endpoint.swift */; };
 		BAC68E152005329C00D7BDA1 /* SearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC68E142005329C00D7BDA1 /* SearchResultsDataSource.swift */; };
 		BAC68E172005380B00D7BDA1 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC68E162005380B00D7BDA1 /* AlbumListController.swift */; };
 		BAC68E192005389700D7BDA1 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC68E182005389700D7BDA1 /* AlbumCell.swift */; };
@@ -50,6 +52,8 @@
 		BA1F3249200075310042F008 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		BA1F324B200075B80042F008 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		BA1F324D200078500042F008 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BA2EF16B20110EF600610AB5 /* iTunesMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesMedia.swift; sourceTree = "<group>"; };
+		BA2EF16D20110F3E00610AB5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		BAC68E142005329C00D7BDA1 /* SearchResultsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsDataSource.swift; sourceTree = "<group>"; };
 		BAC68E162005380B00D7BDA1 /* AlbumListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		BAC68E182005389700D7BDA1 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		BA1F32442000740B0042F008 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA2EF16A20110ED100610AB5 /* Endpoint */,
 				BA1F3247200074360042F008 /* Artist.swift */,
 				BA1F3249200075310042F008 /* Genre.swift */,
 				BA1F324B200075B80042F008 /* Album.swift */,
@@ -140,6 +145,15 @@
 				2C2AA51E200ED89B00FA8481 /* SongCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		BA2EF16A20110ED100610AB5 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				BA2EF16B20110EF600610AB5 /* iTunesMedia.swift */,
+				BA2EF16D20110F3E00610AB5 /* Endpoint.swift */,
+			);
+			name = Endpoint;
 			sourceTree = "<group>";
 		};
 		BAC68E132005326500D7BDA1 /* DataSources */ = {
@@ -231,12 +245,14 @@
 				BA1F3235200073DC0042F008 /* ViewController.swift in Sources */,
 				2C2AA51A200ED7A400FA8481 /* AlbumDetailDataSource.swift in Sources */,
 				2CBDE7AB20059787002CB67E /* AlbumListDataSource.swift in Sources */,
+				BA2EF16C20110EF600610AB5 /* iTunesMedia.swift in Sources */,
 				2C2AA521200ED98400FA8481 /* SongViewModel.swift in Sources */,
 				2C2AA516200ED2F400FA8481 /* AlbumDetailController.swift in Sources */,
 				2C739000200448BC00843C37 /* SearchResultsController.swift in Sources */,
 				BAC68E172005380B00D7BDA1 /* AlbumListController.swift in Sources */,
 				2C2AA51F200ED89B00FA8481 /* SongCell.swift in Sources */,
 				BA1F3233200073DC0042F008 /* AppDelegate.swift in Sources */,
+				BA2EF16E20110F3E00610AB5 /* Endpoint.swift in Sources */,
 				BA1F324A200075310042F008 /* Genre.swift in Sources */,
 				BAC68E152005329C00D7BDA1 /* SearchResultsDataSource.swift in Sources */,
 				BAC68E192005389700D7BDA1 /* AlbumCell.swift in Sources */,
